@@ -13,7 +13,7 @@ then those rules should be fired."
   (atom {}))
 
 (def ^:dynamic *update-fns*
-  ""
+  "Update functions queued up from rules."
   (atom ()))
 
 (defn clear
@@ -23,9 +23,9 @@ then those rules should be fired."
 
 (defn make-filter
   "Creates a filter from a given vector.
-For instance, [:X + 2] means that the value reprsented by :X
+For instance, [[:X :Y] + 2] means that the value reprsented by :X
 in a hash map should be incremented by 2 and re-associated in the
-map."
+map as :Y."
   [[[kw1 kw2] f & args]]
   (fn [hm]
     (assoc hm kw2 (apply f (hm kw1) args))))
@@ -70,15 +70,15 @@ map."
         retfn
         (fn []
           (let [res (exec-query (clj-term precon))
-                _ (println "res: " res)
+               ;; _ (println "res: " res)
                 
                 ;; Execute the filters!
                 newres (map (fn [r]
-                              (println "received r!" r)
+                              ;;(println "received r!" r)
                               (reduce #(%2 %1) r filters)) res)
                 
-                _ (println "filters: " filters)
-                _ (println "newres: " newres)
+                ;;_ (println "filters: " filters)
+                ;;_ (println "newres: " newres)
                 ;; We need to bind variables from the previous results
                 eq-clauses (map (fn [m]
                                   (for [[k v] m]

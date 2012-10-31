@@ -16,6 +16,8 @@
   "Get the class of a java array for later use."
   (class (into-array Object [])))
 
+;; TODO: Add ID's
+
 (def ^:dynamic *relations*
   "This is a mapping of predicate names to mappings of argument names to positions.
 Predicate names are represented as symbols.
@@ -94,7 +96,6 @@ Symbols map to atoms, and keywords map to variables."
 (defn compose
   "Turns a list of terms into a compound term."
   [& terms]
-  (println "Count: " (count terms))
   (with-meta
     (cond
       (empty? terms) (throw (Exception. "Empty terms not allowed"))
@@ -156,7 +157,10 @@ Symbols map to atoms, and keywords map to variables."
 (defn mod-rels
   "Modify a relation that satisfies a predicate."
   [rl propmap-1 propmap-2]
-  (let [compt (compose
+  (let [;; We need to introduce something to ensure blank values don't get asserted
+        ;; TODO: THIS IS A BUG!!! It must be addressed!
+        ;;propmap-defaults 
+        compt (compose
                 (retract-rel rl propmap-1)
                 (assert-rel rl (merge propmap-1 propmap-2)))]
     (with-meta
@@ -181,17 +185,17 @@ Symbols map to atoms, and keywords map to variables."
   (let [q (Query. q-term)
         jm (.allSolutions q)
         hts (map jmap-map (vec jm))
-        ret (->>
-              (for [m hts]
-                (->>
-                  (for [[k v] m]
-                    [(keyword k) (term-clj v)])
-                  (into {})))
-              (#(cond
-                  (empty? %) 'F
-                  (every? empty? %) 'T
-                  :else %)))]
-    ret))
+        ret (for [m hts]
+              (->>
+                (for [[k v] m]
+                  [(keyword k) (term-clj v)])
+                (into {})))
+              ]
+              ;;(#(cond
+              ;;    (empty? %) 'F
+              ;;   (every? empty? %) 'T
+              ;;    :else %)))]
+              ret))
 
 (defn query
   "Compose the queries, transform them, then execute them.

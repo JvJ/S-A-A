@@ -6,9 +6,11 @@ import agent.*;
 import goal.*;
 import java.util.*;
 
-import rdl.interop.*;
+import interop.*;
+
 
 public class NewWorld {
+
 	
 	public static void main(String[] args) throws IOException{
 		
