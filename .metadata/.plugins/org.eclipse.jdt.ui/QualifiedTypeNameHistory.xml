@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="rdl.interop.Relation"/>
+<fullyQualifiedTypeName name="clojure.lang.Keyword"/>
+<fullyQualifiedTypeName name="rdl.interop.RDLInterface"/>
+<fullyQualifiedTypeName name="clojure.lang.IPersistentMap"/>
+<fullyQualifiedTypeName name="rdl.interop.RDLRelation"/>
+<fullyQualifiedTypeName name="clojure.lang.IFn"/>
+<fullyQualifiedTypeName name="clojure.core._"/>
+<fullyQualifiedTypeName name="clojure.lang.Compile"/>
+<fullyQualifiedTypeName name="clojure.lang.Compiler"/>
+</qualifiedTypeNameHistroy>

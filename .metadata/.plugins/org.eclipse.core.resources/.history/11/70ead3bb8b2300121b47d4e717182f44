@@ -1,0 +1,32 @@
+package interop;
+
+import rdl.interop.*;
+
+import clojure.core.*;
+
+public class RDL extends RDLInterface{
+
+	public static const IFn
+	
+	public RDL(){
+		super();
+	}
+	
+	public Relation defRel(String name, Object... args){
+		
+		return new Relation(super.defRel(name, args));
+		
+	}
+	
+	public Rule defRule(String name, Object... args){
+		return new Rule(super.defRule(name, args));
+	}
+	
+	public clojure.lang.IPersistentMap[] query(Object... args){
+		return super.query(args);
+	}
+	
+	public Object pList(Object... args){
+		return super.pList(args);
+	}
+}

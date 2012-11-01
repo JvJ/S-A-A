@@ -1,0 +1,11 @@
+package interop;
+
+import rdl.interop.*;
+
+public class Relation {
+
+	public Relation(){
+		
+	}
+	
+}

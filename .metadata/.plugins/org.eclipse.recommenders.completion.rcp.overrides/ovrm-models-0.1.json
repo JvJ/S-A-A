@@ -1,0 +1,12 @@
+{
+  "C:\\Program Files\\Java\\jre7\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:ovrm:1.0.0",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\rt.jar",
+    "status": "RESOLVED"
+  },
+  "C:\\Users\\JvJ\\Documents\\GitHub\\S-A-A\\Rules\\classes": {
+    "location": "C:\\Users\\JvJ\\Documents\\GitHub\\S-A-A\\Rules\\classes",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\JvJ\\Documents\\GitHub\\S-A-A\\Rules\\classes\u0027. Skipped."
+  }
+}

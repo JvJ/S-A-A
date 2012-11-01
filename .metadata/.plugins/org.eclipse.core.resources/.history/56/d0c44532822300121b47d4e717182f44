@@ -1,0 +1,73 @@
+(ns rdl.interop.RDLInterface
+  (:use [rdl.jpl]
+        [rdl.rule]
+        [rdl.interop.RDLRelation])
+  (:gen-class
+    :state state
+    :init init
+    :methods [
+              [loadFile [String] void]
+              
+              [defRel [String] rdl.interop.Relation]
+              [defRel [String "[Ljava.lang.Object;"] rdl.interop.Relation]
+              
+              [defRule [String] rdl.interop.Rule]
+              [defRule [String "[Ljava.lang.Object;"] rdl.interop.Rule]
+              
+              [query ["[Ljava.lang.Object;"] "[Lclojure.lang.IPersistentMap;"]
+              
+              [updateHead [] void]
+              [updateTail [] void]
+              ]
+    :constructors {[] []}
+    ))
+
+(defn -init
+  "The initializer."
+  []
+  [[] (atom {})])
+
+(defn -loadFile
+  [this s]
+  (load-file s))
+
+(defn -defRel
+  "Evaluates a relation definition and returns a new Relation object."
+  ([this st]
+    (let [evaled (eval (read-string st))]
+      (apply defrel evaled)
+      (rdl.interop.Relation. (str (first evaled)))))
+  ([this st args]
+    (defrel (symbol st) (map keyword args))
+    (rdl.interop.Relation. st)))
+  
+(defn -defRule
+  ([this st]
+    (let [evaled (eval (read-string st))]
+      (apply defrel evaled)
+      (rdl.interop.Rule. (str (first evaled)))))
+  ([this st args]
+    (apply defrule
+           (symbol st)
+           (map #(if (string? %) (read-string %) %) args))
+    (rdl.interop.Rule. st)))
+    
+  
+(defn -query
+  "Execute a query.  This should take an array of clojure lists.  It will return
+an array of clojure maps"
+  [this args]
+  (into-array clojure.lang.IPersistentMap
+              (apply query args)))
+
+(defn -updateHead
+  "Execute for the first pass of the update."
+  [this]
+  (update-head))
+
+(defn -updateTail
+  "Execute for the second pass of the update."
+  [this]
+  (update-tail))
+  
+  

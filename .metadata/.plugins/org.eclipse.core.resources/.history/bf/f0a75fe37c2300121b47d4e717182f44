@@ -1,0 +1,4 @@
+(ns rdl.interop.Rule
+  (:gen-class
+    :prefix "rule-"))
+

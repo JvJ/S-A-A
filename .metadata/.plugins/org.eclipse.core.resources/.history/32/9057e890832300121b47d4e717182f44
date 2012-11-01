@@ -1,0 +1,7 @@
+package interop;
+
+import rdl
+
+public class Relation {
+
+}

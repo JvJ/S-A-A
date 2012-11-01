@@ -1,0 +1,3 @@
+(ns rdl.interop.Rule
+  (:gen-class))
+

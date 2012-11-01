@@ -1,0 +1,23 @@
+package interop;
+
+import rdl.interop.*;
+
+public class Relation extends RDLRelation{
+
+	public Relation(String name){
+		super(name);
+	}
+	
+	
+	public Object term(Object... args){
+		super.term(args);
+	}
+	
+	public Object retractRel(Obejct... args){
+		super.retractRel(args);
+	}
+	
+	public Object retractRel(){
+		
+	}
+}

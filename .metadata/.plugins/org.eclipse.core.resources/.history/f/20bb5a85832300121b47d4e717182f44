@@ -1,0 +1,12 @@
+package interop;
+
+import rdl.interop.*;
+
+public class Rule extends RDLRule{
+
+	public Rule(String name){
+		super(name);
+		super.
+	}
+	
+}

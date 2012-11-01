@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;jpl&apos; to &apos;SAA&apos;&#x0D;&#x0A;- Original project: &apos;Rules&apos;&#x0D;&#x0A;- Destination element: &apos;SAA&apos;&#x0D;&#x0A;- Original element: &apos;jpl&apos;" description="Copy folder" destination="=SAA" element1="jpl" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1351642761376" units="0" version="1.0"/>
+</session>
