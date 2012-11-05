@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Rules/src/rdl/interop/RdlInterface.clj&apos; to &apos;RDLInterface.clj&apos;" description="Rename resource &apos;RdlInterface.clj&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/rdl/interop/RdlInterface.clj" name="RDLInterface.clj" stamp="1352136770497" updateReferences="true"/>
+</session>

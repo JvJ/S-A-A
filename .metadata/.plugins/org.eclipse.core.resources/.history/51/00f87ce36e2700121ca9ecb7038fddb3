@@ -1,0 +1,12 @@
+(ns misc.compscript
+  (:import (rdl.interop
+             RDLInterface
+             RDLRule
+             RDLRelation
+             )))
+
+(defn runcompile
+  []
+  (compile 'rdl.interop.RDLInterface)
+  (compile 'rdl.interop.RDLRule)
+  (compile 'rdl.interop.RDLRelation))

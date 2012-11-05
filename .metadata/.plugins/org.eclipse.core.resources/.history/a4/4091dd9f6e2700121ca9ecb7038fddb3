@@ -1,0 +1,7 @@
+(ns misc.compscript
+  (:import (rdl.interop
+             )))
+
+(defn runcompile
+  []
+  (compile '

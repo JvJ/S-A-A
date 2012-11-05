@@ -9192,3 +9192,408 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 
 !ENTRY ccw.core 2 0 2012-11-04 18:09:53.047
 !MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 19)
+!SESSION 2012-11-05 12:27:20.735 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_09
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 4 4 2012-11-05 12:27:54.044
+!MESSAGE Unable to find Action Set: org.eclipse.rse.core.search.searchActionSet
+
+!ENTRY org.eclipse.ui 4 4 2012-11-05 12:27:54.055
+!MESSAGE Unable to find Action Set: com.jformdesigner.eclipse.actionSet
+
+!ENTRY org.eclipse.osgi 2 0 2012-11-05 12:28:01.290
+!MESSAGE While loading class "ccw.builder.ClojureBuilder", thread "Thread[Worker-3,5,main]" timed out waiting (5053ms) for thread "Thread[main,6,main]" to finish starting bundle "ccw.core_0.10.1.STABLE001 [430]". To avoid deadlock, thread "Thread[Worker-3,5,main]" is proceeding but "ccw.builder.ClojureBuilder" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:plugins/ccw.core_0.10.1.STABLE001/" by thread "main".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.core.internal.events.BuildManager.instantiateBuilder(BuildManager.java:896)
+	at org.eclipse.core.internal.events.BuildManager.initializeBuilder(BuildManager.java:849)
+	at org.eclipse.core.internal.events.BuildManager.getBuilder(BuildManager.java:538)
+	at org.eclipse.core.internal.events.BuildManager.getBuilder(BuildManager.java:567)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:237)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 33 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.core.internal.events.BuildManager.instantiateBuilder(BuildManager.java:896)
+	at org.eclipse.core.internal.events.BuildManager.initializeBuilder(BuildManager.java:849)
+	at org.eclipse.core.internal.events.BuildManager.getBuilder(BuildManager.java:538)
+	at org.eclipse.core.internal.events.BuildManager.getBuilder(BuildManager.java:567)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:237)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.osgi 2 0 2012-11-05 12:28:06.507
+!MESSAGE While loading class "ccw.repl.REPLView", thread "Thread[Worker-3,5,main]" timed out waiting (5191ms) for thread "Thread[main,6,main]" to finish starting bundle "ccw.core_0.10.1.STABLE001 [430]". To avoid deadlock, thread "Thread[Worker-3,5,main]" is proceeding but "ccw.repl.REPLView" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:plugins/ccw.core_0.10.1.STABLE001/" by thread "main".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at ccw.CCWPlugin.getProjectREPL(CCWPlugin.java:297)
+	at ccw.builder.ClojureBuilder.fullBuild(ClojureBuilder.java:124)
+	at ccw.builder.ClojureBuilder.build(ClojureBuilder.java:69)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 28 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at ccw.CCWPlugin.getProjectREPL(CCWPlugin.java:297)
+	at ccw.builder.ClojureBuilder.fullBuild(ClojureBuilder.java:124)
+	at ccw.builder.ClojureBuilder.build(ClojureBuilder.java:69)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.launching 4 150 2012-11-05 12:28:57.971
+!MESSAGE The archive: /SAA/classes which is referenced by the classpath, does not exist.
+
+!ENTRY ccw.core 2 0 2012-11-05 12:30:24.882
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:30:27.652
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:30:29.789
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:30:30.893
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:30:33.791
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 5)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:30:35.574
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:30:37.249
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:30:40.641
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:30:42.279
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:30:45.145
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:31:07.745
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:31:08.981
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:31:11.473
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:31:13.124
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:31:14.111
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:31:17.412
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:31:19.817
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:31:22.229
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:31:23.361
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:31:25.008
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:31:29.942
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 10)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:31:31.032
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 10)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:31:42.645
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 12)
+
+!ENTRY ccw.core 1 0 2012-11-05 12:31:53.704
+!MESSAGE Started ccw nREPL server: nrepl://localhost:10945
+
+!ENTRY ccw.core 1 0 2012-11-05 12:31:53.704
+!MESSAGE Starting REPL with program args: -i "/C:/Users/Sony/Downloads/java-eclipse/eclipse/plugins/ccw.core_0.10.1.STABLE001/ccw/debug/serverrepl.clj" -e "(require 'clojure.tools.nrepl.server)(do (clojure.tools.nrepl.server/start-server :ack-port 10945) nil)"  -i "@/misc/compscript.clj" 
+
+!ENTRY ccw.core 1 0 2012-11-05 12:31:53.716
+!MESSAGE Adding to project's classpath to support nREPL: [C:\Users\Sony\Downloads\java-eclipse\eclipse\plugins\org.clojure.tools.nrepl_0.2.0.BETA009.jar]
+
+!ENTRY ccw.core 1 0 2012-11-05 12:32:05.904
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.Compiler$CompilerException", :id "395bf349-54bb-4bfb-a5a0-9a60de732006", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:32:05.905
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.Compiler$CompilerException", :id "395bf349-54bb-4bfb-a5a0-9a60de732006", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:32:21.487
+!MESSAGE Cannot handle REPL response: :ex{:ex "class java.lang.RuntimeException", :id "a982283a-ea86-4d64-9e75-81f089525140", :root-ex "class java.lang.ClassNotFoundException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:32:21.488
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class java.lang.RuntimeException", :id "a982283a-ea86-4d64-9e75-81f089525140", :root-ex "class java.lang.ClassNotFoundException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:33:01.262
+!MESSAGE Cannot handle REPL response: :ex{:ex "class java.lang.RuntimeException", :id "6bf05677-47cd-4a85-9f9e-30204a00e94f", :root-ex "class java.lang.ClassNotFoundException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:33:01.262
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class java.lang.RuntimeException", :id "6bf05677-47cd-4a85-9f9e-30204a00e94f", :root-ex "class java.lang.ClassNotFoundException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:33:23.695
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.Compiler$CompilerException", :id "37125c6b-1d99-407e-99ea-9db049c8a7c0", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:33:23.696
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.Compiler$CompilerException", :id "37125c6b-1d99-407e-99ea-9db049c8a7c0", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:33:43.623
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.Compiler$CompilerException", :id "575235b8-0244-469c-835f-d77042ec7d30", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:33:43.624
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.Compiler$CompilerException", :id "575235b8-0244-469c-835f-d77042ec7d30", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:34:02.178
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.Compiler$CompilerException", :id "ee3790e0-ee0b-4e15-b6f6-4f95440444f2", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:34:02.179
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.Compiler$CompilerException", :id "ee3790e0-ee0b-4e15-b6f6-4f95440444f2", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:34:42.440
+!MESSAGE Cannot handle REPL response: :ex{:ex "class java.lang.RuntimeException", :id "9dee2fc7-8d06-497e-973b-f5eb82fa8a01", :root-ex "class java.lang.Exception", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:34:42.441
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class java.lang.RuntimeException", :id "9dee2fc7-8d06-497e-973b-f5eb82fa8a01", :root-ex "class java.lang.Exception", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 2 0 2012-11-05 12:34:46.575
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: Unmatched delimiter: ))
+
+!ENTRY ccw.core 2 0 2012-11-05 12:34:51.103
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: Unmatched delimiter: ))
+
+!ENTRY ccw.core 2 0 2012-11-05 12:34:55.891
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: Unmatched delimiter: ))
+
+!ENTRY ccw.core 1 0 2012-11-05 12:35:09.931
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.Compiler$CompilerException", :id "b2e23e07-2338-40a3-971c-2c18711d055f", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:35:09.932
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.Compiler$CompilerException", :id "b2e23e07-2338-40a3-971c-2c18711d055f", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 2 0 2012-11-05 12:35:31.051
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 6)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:35:32.576
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 6)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:35:33.631
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading string)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:35:35.158
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading string)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:35:35.860
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading string)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:35:39.703
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading string)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:35:40.808
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading string)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:35:42.720
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading string)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:35:46.047
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading string)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:35:47.285
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 6)
+
+!ENTRY ccw.core 1 0 2012-11-05 12:36:14.038
+!MESSAGE Cannot handle REPL response: :ex{:ex "class java.lang.RuntimeException", :id "086db442-7d25-454b-b8df-e951451e2138", :root-ex "class java.io.FileNotFoundException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:36:14.039
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class java.lang.RuntimeException", :id "086db442-7d25-454b-b8df-e951451e2138", :root-ex "class java.io.FileNotFoundException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:37:15.195
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.Compiler$CompilerException", :id "d6f767f1-97ef-4a0c-80e5-0bc7dee6f7c5", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:37:15.195
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.Compiler$CompilerException", :id "d6f767f1-97ef-4a0c-80e5-0bc7dee6f7c5", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:38:02.125
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.Compiler$CompilerException", :id "0d460a4d-23b9-41b2-9333-6a7015c4471b", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:38:02.125
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.Compiler$CompilerException", :id "0d460a4d-23b9-41b2-9333-6a7015c4471b", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:38:23.201
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.Compiler$CompilerException", :id "fc7d4804-df65-4539-bb15-8fa54cb92c63", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:38:23.202
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.Compiler$CompilerException", :id "fc7d4804-df65-4539-bb15-8fa54cb92c63", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:39:23.028
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.Compiler$CompilerException", :id "a8fddf83-8280-4cb3-af85-0a429902ea45", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:39:23.028
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.Compiler$CompilerException", :id "a8fddf83-8280-4cb3-af85-0a429902ea45", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:39:43.513
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.Compiler$CompilerException", :id "9abbe76b-5dd4-44ff-8958-c144f4d6126f", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-05 12:39:43.513
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.Compiler$CompilerException", :id "9abbe76b-5dd4-44ff-8958-c144f4d6126f", :root-ex "class clojure.lang.Compiler$CompilerException", :session "1a6b8313-1930-4439-9112-6c4c3accaa6b", :status ["eval-error"]}
+
+!ENTRY ccw.core 2 0 2012-11-05 12:41:19.214
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:41:21.266
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:41:22.284
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:41:23.688
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:41:25.663
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:41:26.803
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:41:27.618
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:41:29.076
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:41:31.013
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:41:32.049
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:41:34.111
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:41:37.929
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading string)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:41:41.503
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:41:43.751
+!MESSAGE Failed to read file compscript.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 1 0 2012-11-05 12:41:49.959
+!MESSAGE Starting REPL with program args: -i "/C:/Users/Sony/Downloads/java-eclipse/eclipse/plugins/ccw.core_0.10.1.STABLE001/ccw/debug/serverrepl.clj" -e "(require 'clojure.tools.nrepl.server)(do (clojure.tools.nrepl.server/start-server :ack-port 10945) nil)"  
+
+!ENTRY ccw.core 1 0 2012-11-05 12:41:49.968
+!MESSAGE Adding to project's classpath to support nREPL: [C:\Users\Sony\Downloads\java-eclipse\eclipse\plugins\org.clojure.tools.nrepl_0.2.0.BETA009.jar]

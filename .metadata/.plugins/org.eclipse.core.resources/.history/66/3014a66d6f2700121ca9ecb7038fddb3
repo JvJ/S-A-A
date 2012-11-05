@@ -1,0 +1,10 @@
+(ns misc.compscript)
+
+(defn runcompile
+  []
+  (load-file "../rdl/interop/RDLInterface.clj")
+  (load-file "../rdl/interop/RDLRule.clj")
+  (load-file "../rdl/interop/RDLRelation.clj")
+  (compile 'rdl.interop.RDLInterface)
+  (compile 'rdl.interop.RDLRule)
+  (compile 'rdl.interop.RDLRelation))
