@@ -1,8 +1,6 @@
 package interop;
 
-import clojure.lang.IPersistentMap;
-
-import clojure.lang.IFn;
+import clojure.lang.*;
 
 public class RDLTesting {
 
@@ -115,8 +113,11 @@ public class RDLTesting {
 		// And a smacking relationship
 		Relation smack = rdl.defRel("smack", "INST", "TARG");
 		
+		Relation agent = rdl.defRel("agent", "SELF");
+		
 		// Let's assert 2 facts
 		rdl.query(
+				agent.assertRel("SELF", "johnny"),
 				// First, we establish that Johnny has some feelings
 				emotion.assertRel("SELF", "johnny", "ANGER", 0.0, "HAPPINESS", 1.0, "SADNESS", 0.0),
 				// Next, we establish that ace hits johnny!
@@ -133,7 +134,13 @@ public class RDLTesting {
 			System.out.println(m);
 		}
 		
-		
+		IFn trans = new AFn(){
+			public Object invoke(Object v1, Object v2){
+				
+				return (Double)v1 + (Double)v2;
+			}
+		};
+			
 		
 		Rule getSmacked = rdl.defRule(
 				"getSmacked",
@@ -144,23 +151,27 @@ public class RDLTesting {
 				":==>",
 				// We've introduced a transformer, which goes from :V to :V2
 				// The action taken is to add 0.1
-				rdl.trans(":V", ":V2", "+", 0.1),
+				rdl.trans(":V", ":V2", trans, 0.1),
+				//rdl.trans(":H", ":H", "(fn [x & r] (println \"HEY!\") x)"),
 				":==>",
 				// The effect of the rule is to modify the relation
 				emotion.modRel("SELF", ":X", ":==>", "ANGER", ":V2", "HAPPINESS", ":H", "SADNESS", ":S"),
-				smack.retractRel("SELF", ":I", "TARG", ":X")
+				smack.retractRel("INST", ":I", "TARG", ":X")
 				);
 		
-		Relation agent = rdl.defRel("agent", "SELF");
+		
 		
 		Rule smackBack = rdl.defRule(
 				"smackBack",
-				smack.term("INST", ":I", "TARG", ":T"),
-				agent.term("SELF", ":T"),
+				smack.term("INST", ":I", "TARG", ":X"),
+				agent.term("SELF", ":X"),
 				":==>",
-				smack.assertRel("INST", ":T", "TARG", ":I"),
-				
+				smack.assertRel("INST", ":X", "TARG", ":I")
+				//smack.retractRel("INST", ":I", "TARG", ":T")
 				);
+		
+		
+				
 		
 		
 		rdl.updateHead();
@@ -168,12 +179,15 @@ public class RDLTesting {
 		
 		// Check to make sure we have the right facts
 		results = rdl.query(
+				smack.term("INST", ":X", "TARG", ":Y"),
+				//agent.term("SELF", ":X"),
 				emotion.term("SELF", "johnny", "ANGER", ":V", "HAPPINESS", ":H", "SADNESS", ":S")
 				);
 			
 		System.out.println("johnny's anger value after: ");
 		for (IPersistentMap m : results){
 			System.out.println(m);
+			//m.
 		}
 		
 	}

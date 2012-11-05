@@ -9597,3 +9597,45 @@ org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
 
 !ENTRY ccw.core 1 0 2012-11-05 12:41:49.968
 !MESSAGE Adding to project's classpath to support nREPL: [C:\Users\Sony\Downloads\java-eclipse\eclipse\plugins\org.clojure.tools.nrepl_0.2.0.BETA009.jar]
+
+!ENTRY ccw.core 2 0 2012-11-05 12:51:36.564
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 8)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:51:41.089
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 9)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:51:43.031
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: Map literal must contain an even number of forms)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:51:48.559
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 9)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:52:04.740
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 8)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:52:05.527
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 8)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:52:06.966
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: Map literal must contain an even number of forms)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:52:09.696
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: Map literal must contain an even number of forms)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:52:10.937
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 8)
+
+!ENTRY ccw.core 2 0 2012-11-05 12:59:02.830
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: Unmatched delimiter: ))
+
+!ENTRY ccw.core 2 0 2012-11-05 12:59:05.197
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: Unmatched delimiter: ))
+
+!ENTRY ccw.core 2 0 2012-11-05 12:59:10.344
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: Unmatched delimiter: ))
+
+!ENTRY ccw.core 2 0 2012-11-05 12:59:11.851
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: Unmatched delimiter: ))
+
+!ENTRY ccw.core 2 0 2012-11-05 12:59:13.334
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: Unmatched delimiter: ))

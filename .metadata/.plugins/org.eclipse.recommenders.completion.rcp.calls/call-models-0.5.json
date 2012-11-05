@@ -18,5 +18,15 @@
     "location": "C:\\Users\\JvJ\\Documents\\GitHub\\S-A-A\\SAA\\src",
     "status": "UNRESOLVED",
     "error": "No class path info available for \u0027C:\\Users\\JvJ\\Documents\\GitHub\\S-A-A\\SAA\\src\u0027. Skipped."
+  },
+  "C:\\Users\\Sony\\Documents\\GitHub\\S-A-A\\Rules\\clojure.jar": {
+    "location": "C:\\Users\\Sony\\Documents\\GitHub\\S-A-A\\Rules\\clojure.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027C:\\Users\\Sony\\Documents\\GitHub\\S-A-A\\Rules\\clojure.jar\u0027. Neither fingerprint \u002704830e76a9e8c029acb257a70c5cf30592e5a301\u0027 nor symbolic name \u0027org.clojure.clojure\u0027 are known."
+  },
+  "C:\\Users\\Sony\\Documents\\GitHub\\S-A-A\\Rules\\classes": {
+    "location": "C:\\Users\\Sony\\Documents\\GitHub\\S-A-A\\Rules\\classes",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\Sony\\Documents\\GitHub\\S-A-A\\Rules\\classes\u0027. Skipped."
   }
 }

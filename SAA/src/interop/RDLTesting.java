@@ -186,6 +186,9 @@ public class RDLTesting {
 			
 		System.out.println("johnny's anger value after: ");
 		for (IPersistentMap m : results){
+			
+			
+			
 			System.out.println(m);
 			//m.
 		}

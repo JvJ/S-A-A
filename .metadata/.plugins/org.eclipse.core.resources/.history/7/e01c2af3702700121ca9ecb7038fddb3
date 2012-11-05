@@ -35,10 +35,5 @@ public class RDL extends RDLInterface{
 	
 	public Object var(String name){
 		
-		if (name.length() > 1 && name.charAt(0) == ':'){
-			name = name.substring(1);
-		}
-		
-		return RT.keyword(null, name);
 	}
 }

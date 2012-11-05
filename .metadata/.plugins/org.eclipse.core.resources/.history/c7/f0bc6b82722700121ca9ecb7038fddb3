@@ -5,16 +5,11 @@
 (defrel 'smack [:INST :TARG])
 (defrel 'anger [:SELF :VAL])
 
-(query
-  (assertrel 'smack {:INST 'kaylen :TARG 'mark})
-  (assertrel 'mark {:SELF 'mark :ANGER 0.0}))
-
 (defrule
   'getsmacked
   (rel 'smack {:INST :I :TARG :T})
   (rel 'anger {:SELF :T :VAL :V})
   :==>
-  [[:V :V2] + 0.1]
-  ;;{:V2 (fn [m] (+ (m :V) 0.1))}
+  {:V2 (fn [m] (+ (m :V) 0.1))}
   :==>
   (mod-rels 'anger {:SELF :T} {:VAL :V2}))

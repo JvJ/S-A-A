@@ -33,12 +33,4 @@ public class RDL extends RDLInterface{
 		return super.trans(kw1, kw2, func, args);
 	}
 	
-	public Object var(String name){
-		
-		if (name.length() > 1 && name.charAt(0) == ':'){
-			name = name.substring(1);
-		}
-		
-		return RT.keyword(null, name);
-	}
 }
