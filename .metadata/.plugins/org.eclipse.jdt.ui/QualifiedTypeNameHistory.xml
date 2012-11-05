@@ -6,8 +6,9 @@
 <fullyQualifiedTypeName name="rdl.interop.RDLInterface"/>
 <fullyQualifiedTypeName name="clojure.lang.IPersistentMap"/>
 <fullyQualifiedTypeName name="rdl.interop.RDLRelation"/>
-<fullyQualifiedTypeName name="clojure.lang.IFn"/>
 <fullyQualifiedTypeName name="clojure.core._"/>
 <fullyQualifiedTypeName name="clojure.lang.Compile"/>
 <fullyQualifiedTypeName name="clojure.lang.Compiler"/>
+<fullyQualifiedTypeName name="clojure.lang.IFn"/>
+<fullyQualifiedTypeName name="clojure.lang.IMapEntry"/>
 </qualifiedTypeNameHistroy>

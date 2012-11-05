@@ -1,0 +1,6 @@
+
+(use 'rdl.rule)
+(use 'rdl.jpl)
+
+(defrel 'smack [:INST :TARG])
+(defrel 'anger [:SELF :VAL])

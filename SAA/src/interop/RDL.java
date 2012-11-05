@@ -29,7 +29,7 @@ public class RDL extends RDLInterface{
 		return super.pList(args);
 	}
 	
-	public Object trans(String kw1, String kw2, String func, Object... args){
+	public Object trans(String kw1, String kw2, Object func, Object... args){
 		return super.trans(kw1, kw2, func, args);
 	}
 	

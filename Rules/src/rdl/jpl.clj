@@ -31,7 +31,8 @@ The key :unfields is the inverse of :fields."
 
 (def symbol-mappings
   {'_com_ ","
-   '_el_ "[]"})
+   '_el_ "[]"
+   '!= "\\="})
 
 (defn convert-symbol
   [sym]

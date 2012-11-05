@@ -1,0 +1,9 @@
+(ns misc.core)
+
+;;;; These are some miscellaneous utility functions!
+
+(def $ partial)
+
+(def $> apply)
+
+(def $+ comp)

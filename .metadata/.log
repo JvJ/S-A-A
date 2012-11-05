@@ -6817,3 +6817,2378 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 
 !ENTRY org.eclipse.osgi 2 1 2012-11-01 17:51:24.582
 !MESSAGE NLS unused message: CacheManager_CannotLoadNonUrlLocation in: org.eclipse.equinox.internal.p2.repository.messages
+!SESSION 2012-11-02 12:23:27.414 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_07
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ccw.core 2 0 2012-11-02 14:17:37.864
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 96)
+
+!ENTRY ccw.core 2 0 2012-11-02 14:17:39.741
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: java.lang.ClassNotFoundException: (reset! *update-fns*))
+
+!ENTRY ccw.core 2 0 2012-11-02 14:17:43.259
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 100)
+
+!ENTRY ccw.core 2 0 2012-11-02 14:17:47.279
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 96)
+
+!ENTRY ccw.core 2 0 2012-11-02 14:17:48.447
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 100)
+
+!ENTRY ccw.core 2 0 2012-11-02 14:17:52.082
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 105)
+
+!ENTRY ccw.core 2 0 2012-11-02 14:17:53.219
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 100)
+
+!ENTRY ccw.core 2 0 2012-11-02 14:17:54.585
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 100)
+
+!ENTRY ccw.core 2 0 2012-11-02 14:18:19.313
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 1)
+
+!ENTRY ccw.core 2 0 2012-11-02 14:18:25.487
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 1)
+
+!ENTRY ccw.core 2 0 2012-11-02 14:18:30.248
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 1)
+
+!ENTRY ccw.core 2 0 2012-11-02 14:18:34.131
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-02 14:18:35.731
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-02 14:20:34.144
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-02 14:20:37.837
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 4 0 2012-11-02 15:13:36.817
+!MESSAGE When trying to create clojure.main file arg to launch, was unable to  find package fragment root for file L/Rules/TestRules.clj in project P/Rules
+
+!ENTRY ccw.core 1 0 2012-11-02 15:13:37.215
+!MESSAGE Started ccw nREPL server: nrepl://localhost:57749
+
+!ENTRY ccw.core 1 0 2012-11-02 15:13:37.217
+!MESSAGE Starting REPL with program args: -i "/C:/eclipse/plugins/ccw.core_0.10.1.STABLE001/ccw/debug/serverrepl.clj" -e "(require 'clojure.tools.nrepl.server)(do (clojure.tools.nrepl.server/start-server :ack-port 57749) nil)"  
+
+!ENTRY ccw.core 1 0 2012-11-02 15:13:37.251
+!MESSAGE Adding to project's classpath to support nREPL: [C:\eclipse\plugins\org.clojure.tools.nrepl_0.2.0.BETA009.jar]
+
+!ENTRY ccw.core 4 0 2012-11-02 15:13:49.650
+!MESSAGE Could not connect REPL to local launch
+!STACK 0
+java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.InterruptedException
+	at clojure.tools.nrepl.Connection$Response.values(Connection.java:142)
+	at ccw.repl.REPLView.configure(REPLView.java:310)
+	at ccw.repl.REPLView.connect(REPLView.java:354)
+	at ccw.launching.ClojureLaunchDelegate$REPLViewLaunchMonitor$1$1.connectRepl(ClojureLaunchDelegate.java:154)
+	at ccw.launching.ClojureLaunchDelegate$REPLViewLaunchMonitor$1$1.run(ClojureLaunchDelegate.java:142)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:164)
+	at org.eclipse.ui.internal.UILockListener.aboutToWait(UILockListener.java:126)
+	at org.eclipse.core.internal.jobs.LockManager.aboutToWait(LockManager.java:123)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:845)
+	at org.eclipse.core.internal.jobs.InternalJob.join(InternalJob.java:380)
+	at org.eclipse.core.runtime.jobs.Job.join(Job.java:385)
+	at ccw.launching.ClojureLaunchDelegate$REPLViewLaunchMonitor.done(ClojureLaunchDelegate.java:177)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.launch(JavaLaunchDelegate.java:109)
+	at ccw.launching.ClojureLaunchDelegate.launch(ClojureLaunchDelegate.java:192)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:697)
+	at ccw.launching.ClojureLaunchShortcut.launchProject(ClojureLaunchShortcut.java:127)
+	at ccw.launching.ClojureLaunchShortcut.launchEditorPart(ClojureLaunchShortcut.java:67)
+	at ccw.launching.ClojureLaunchShortcut.launch(ClojureLaunchShortcut.java:60)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:424)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launchShortcut(ContextRunner.java:205)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:138)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:82)
+	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.run(AbstractLaunchToolbarAction.java:80)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:409)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:241)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:229)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$6.handleEvent(ActionContributionItem.java:452)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4169)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3758)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1029)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:923)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.InterruptedException
+	at clojure.tools.nrepl.Connection$Response.combinedResponse(Connection.java:126)
+	at clojure.tools.nrepl.Connection$Response.values(Connection.java:140)
+	... 56 more
+Caused by: java.lang.RuntimeException: java.lang.InterruptedException
+	at clojure.lang.Util.runtimeException(Util.java:165)
+	at clojure.lang.LazySeq.sval(LazySeq.java:51)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$take_while$fn__3840.invoke(core.clj:2509)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.tools.nrepl$client$tracking_seq__4780$fn__4781.invoke(nrepl.clj:47)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$filter$fn__3830.invoke(core.clj:2468)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$take_while$fn__3840.invoke(core.clj:2509)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$concat$fn__3528.invoke(core.clj:661)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$apply.invoke(core.clj:600)
+	at clojure.tools.nrepl$combine_responses.invoke(nrepl.clj:130)
+	at clojure.lang.Var.invoke(Var.java:401)
+	at clojure.tools.nrepl.Connection$Response.combinedResponse(Connection.java:121)
+	... 57 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at clojure.tools.nrepl.transport$fn_transport$fn__4700.invoke(transport.clj:42)
+	at clojure.tools.nrepl.transport.FnTransport.recv(transport.clj:29)
+	at clojure.tools.nrepl$response_seq$fn__4770.invoke(nrepl.clj:27)
+	at clojure.core$repeatedly$fn__4304.invoke(core.clj:4518)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	... 89 more
+
+!ENTRY ccw.core 4 0 2012-11-02 15:14:48.896
+!MESSAGE Could not load file C:\Users\JvJ\Documents\GitHub\S-A-A\Rules\src\rdl\jpl.clj
+!STACK 0
+java.lang.NullPointerException
+	at ccw.repl.REPLView.getAvailableOperations(REPLView.java:376)
+	at ccw.editors.clojure.LoadFileAction.evaluateFileText(LoadFileAction.java:115)
+	at ccw.editors.clojure.LoadFileAction.run(LoadFileAction.java:91)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:119)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:76)
+	at sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:229)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:210)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:131)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:171)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:814)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:707)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$7(HandledContributionItem.java:691)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:630)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4169)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3758)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1029)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:923)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY ccw.core 1 0 2012-11-02 15:20:04.685
+!MESSAGE Cannot handle REPL response: :ex{:ex "class java.lang.ClassCastException", :id "50ea3fbd-d651-43af-aa53-ff7290257a2f", :root-ex "class java.lang.ClassCastException", :session "6e79e38e-9c9b-4a8e-8010-4d72053969d4", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:20:04.687
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class java.lang.ClassCastException", :id "50ea3fbd-d651-43af-aa53-ff7290257a2f", :root-ex "class java.lang.ClassCastException", :session "6e79e38e-9c9b-4a8e-8010-4d72053969d4", :status ["eval-error"]}
+
+!ENTRY org.eclipse.text 4 2 2012-11-02 15:20:48.021
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.text".
+!STACK 0
+java.lang.RuntimeException: java.lang.Exception: Ambiguous match for "02.0))" by #<UnionMatcher net.cgrand.parsley.lrplus.UnionMatcher@61104879>
+	at ccw.util.ClojureUtils.invoke(ClojureUtils.java:77)
+	at ccw.util.ClojureInvoker._(ClojureInvoker.java:31)
+	at ccw.editors.clojure.ClojureSourceViewer.updateTextBuffer(ClojureSourceViewer.java:444)
+	at ccw.editors.clojure.ClojureSourceViewer.access$1(ClojureSourceViewer.java:442)
+	at ccw.editors.clojure.ClojureSourceViewer$1.documentAboutToBeChanged(ClojureSourceViewer.java:432)
+	at org.eclipse.jface.text.AbstractDocument.fireDocumentAboutToBeChanged(AbstractDocument.java:665)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1182)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1210)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.replaceTextRange(DefaultDocumentAdapter.java:248)
+	at org.eclipse.swt.custom.StyledText.modifyContent(StyledText.java:7178)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(StyledText.java:8007)
+	at org.eclipse.swt.custom.StyledText.doContent(StyledText.java:2467)
+	at org.eclipse.swt.custom.StyledText.handleKey(StyledText.java:5907)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5937)
+	at org.eclipse.swt.custom.StyledText$7.handleEvent(StyledText.java:5629)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1100)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1521)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4640)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4528)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4976)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1029)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:923)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+Caused by: java.lang.Exception: Ambiguous match for "02.0))" by #<UnionMatcher net.cgrand.parsley.lrplus.UnionMatcher@61104879>
+	at net.cgrand.parsley.lrplus.UnionMatcher.match(lrplus.clj:85)
+	at net.cgrand.parsley.lrplus.CompoundTokenMatcher.match(lrplus.clj:100)
+	at net.cgrand.parsley.lrplus$step1.invoke(lrplus.clj:168)
+	at net.cgrand.parsley.lrplus$step.invoke(lrplus.clj:193)
+	at net.cgrand.parsley$stepper$self__2982.invoke(parsley.clj:37)
+	at net.cgrand.parsley$memoize1$fn__2995.invoke(parsley.clj:67)
+	at net.cgrand.parsley$memoize_parser$fn__2989.invoke(parsley.clj:64)
+	at net.cgrand.parsley$memoize2$fn__2999.invoke(parsley.clj:71)
+	at net.cgrand.parsley$memoize_parser$fn__2989.invoke(parsley.clj:64)
+	at net.cgrand.parsley$parse_tree.invoke(parsley.clj:109)
+	at paredit.parser$buffer_parse_tree.invoke(parser.clj:400)
+	at ccw.editors.clojure.editor_support$updateTextBuffer$fn__3490.invoke(editor_support.clj:45)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at clojure.lang.LockingTransaction.run(LockingTransaction.java:263)
+	at clojure.lang.LockingTransaction.runInTransaction(LockingTransaction.java:231)
+	at ccw.editors.clojure.editor_support$updateTextBuffer.invoke(editor_support.clj:42)
+	at clojure.lang.Var.invoke(Var.java:417)
+	at ccw.util.ClojureUtils.invoke(ClojureUtils.java:73)
+	... 51 more
+
+!ENTRY org.eclipse.text 4 2 2012-11-02 15:20:48.035
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.text".
+!STACK 0
+java.lang.RuntimeException: java.lang.Exception: Ambiguous match for "02.0))" by #<UnionMatcher net.cgrand.parsley.lrplus.UnionMatcher@61104879>
+	at ccw.util.ClojureUtils.invoke(ClojureUtils.java:50)
+	at ccw.util.ClojureInvoker._(ClojureInvoker.java:19)
+	at ccw.editors.clojure.ClojureSourceViewer.getParseState(ClojureSourceViewer.java:456)
+	at sun.reflect.GeneratedMethodAccessor99.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at clojure.lang.Reflector.invokeMatchingMethod(Reflector.java:92)
+	at clojure.lang.Reflector.invokeNoArgInstanceMember(Reflector.java:316)
+	at ccw.editors.clojure.ClojureTopLevelFormsDamagerImpl$getDamageRegion.invoke(ClojureTopLevelFormsDamagerImpl.clj:71)
+	at clojure.lang.Var.invoke(Var.java:413)
+	at ccw.util.ClojureUtils.invoke(ClojureUtils.java:64)
+	at ccw.util.ClojureInvoker._(ClojureInvoker.java:27)
+	at ccw.editors.clojure.ClojureTopLevelFormsDamager.getDamageRegion(ClojureTopLevelFormsDamager.java:31)
+	at org.eclipse.jface.text.presentation.PresentationReconciler.getDamage(PresentationReconciler.java:500)
+	at org.eclipse.jface.text.presentation.PresentationReconciler.access$9(PresentationReconciler.java:480)
+	at org.eclipse.jface.text.presentation.PresentationReconciler$InternalListener.textChanged(PresentationReconciler.java:223)
+	at org.eclipse.jface.text.TextViewer.updateTextListeners(TextViewer.java:2830)
+	at org.eclipse.jface.text.TextViewer$VisibleDocumentListener.documentChanged(TextViewer.java:403)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged2(AbstractDocument.java:769)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:736)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:721)
+	at org.eclipse.jface.text.AbstractDocument.fireDocumentChanged(AbstractDocument.java:796)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1191)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1210)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.replaceTextRange(DefaultDocumentAdapter.java:248)
+	at org.eclipse.swt.custom.StyledText.modifyContent(StyledText.java:7178)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(StyledText.java:8007)
+	at org.eclipse.swt.custom.StyledText.doContent(StyledText.java:2467)
+	at org.eclipse.swt.custom.StyledText.handleKey(StyledText.java:5907)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5937)
+	at org.eclipse.swt.custom.StyledText$7.handleEvent(StyledText.java:5629)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1100)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1521)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4640)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4528)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4976)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1029)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:923)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+Caused by: java.lang.Exception: Ambiguous match for "02.0))" by #<UnionMatcher net.cgrand.parsley.lrplus.UnionMatcher@61104879>
+	at net.cgrand.parsley.lrplus.UnionMatcher.match(lrplus.clj:85)
+	at net.cgrand.parsley.lrplus.CompoundTokenMatcher.match(lrplus.clj:100)
+	at net.cgrand.parsley.lrplus$step1.invoke(lrplus.clj:168)
+	at net.cgrand.parsley.lrplus$step.invoke(lrplus.clj:193)
+	at net.cgrand.parsley$stepper$self__2982.invoke(parsley.clj:37)
+	at net.cgrand.parsley$memoize1$fn__2995.invoke(parsley.clj:67)
+	at net.cgrand.parsley$memoize_parser$fn__2989.invoke(parsley.clj:64)
+	at net.cgrand.parsley$memoize2$fn__2999.invoke(parsley.clj:71)
+	at net.cgrand.parsley$memoize_parser$fn__2989.invoke(parsley.clj:64)
+	at net.cgrand.parsley$parse_tree.invoke(parsley.clj:109)
+	at paredit.parser$buffer_parse_tree.invoke(parser.clj:400)
+	at ccw.editors.clojure.editor_support$updateTextBuffer$fn__3490.invoke(editor_support.clj:45)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at clojure.lang.LockingTransaction.run(LockingTransaction.java:263)
+	at clojure.lang.LockingTransaction.runInTransaction(LockingTransaction.java:231)
+	at ccw.editors.clojure.editor_support$updateTextBuffer.invoke(editor_support.clj:42)
+	at ccw.editors.clojure.editor_support$getParseState.invoke(editor_support.clj:86)
+	at clojure.lang.Var.invoke(Var.java:405)
+	at ccw.util.ClojureUtils.invoke(ClojureUtils.java:46)
+	... 67 more
+
+!ENTRY ccw.core 1 0 2012-11-02 15:21:43.840
+!MESSAGE Starting REPL with program args: -i "/C:/eclipse/plugins/ccw.core_0.10.1.STABLE001/ccw/debug/serverrepl.clj" -e "(require 'clojure.tools.nrepl.server)(do (clojure.tools.nrepl.server/start-server :ack-port 57749) nil)"  -i "@/rdl/jpl.clj" 
+
+!ENTRY ccw.core 1 0 2012-11-02 15:21:43.868
+!MESSAGE Adding to project's classpath to support nREPL: [C:\eclipse\plugins\org.clojure.tools.nrepl_0.2.0.BETA009.jar]
+
+!ENTRY ccw.core 4 0 2012-11-02 15:21:57.280
+!MESSAGE Could not connect REPL to local launch
+!STACK 0
+java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.InterruptedException
+	at clojure.tools.nrepl.Connection$Response.values(Connection.java:142)
+	at ccw.repl.REPLView.configure(REPLView.java:310)
+	at ccw.repl.REPLView.connect(REPLView.java:354)
+	at ccw.launching.ClojureLaunchDelegate$REPLViewLaunchMonitor$1$1.connectRepl(ClojureLaunchDelegate.java:154)
+	at ccw.launching.ClojureLaunchDelegate$REPLViewLaunchMonitor$1$1.run(ClojureLaunchDelegate.java:142)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:164)
+	at org.eclipse.ui.internal.UILockListener.aboutToWait(UILockListener.java:126)
+	at org.eclipse.core.internal.jobs.LockManager.aboutToWait(LockManager.java:123)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:845)
+	at org.eclipse.core.internal.jobs.InternalJob.join(InternalJob.java:380)
+	at org.eclipse.core.runtime.jobs.Job.join(Job.java:385)
+	at ccw.launching.ClojureLaunchDelegate$REPLViewLaunchMonitor.done(ClojureLaunchDelegate.java:177)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.launch(JavaLaunchDelegate.java:109)
+	at ccw.launching.ClojureLaunchDelegate.launch(ClojureLaunchDelegate.java:192)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:697)
+	at ccw.launching.ClojureLaunchShortcut.launchProject(ClojureLaunchShortcut.java:127)
+	at ccw.launching.ClojureLaunchShortcut.launchEditorPart(ClojureLaunchShortcut.java:67)
+	at ccw.launching.ClojureLaunchShortcut.launch(ClojureLaunchShortcut.java:60)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:424)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launchShortcut(ContextRunner.java:205)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:138)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:82)
+	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.run(AbstractLaunchToolbarAction.java:80)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:409)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:241)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:229)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$6.handleEvent(ActionContributionItem.java:452)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4169)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3758)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1029)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:923)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.InterruptedException
+	at clojure.tools.nrepl.Connection$Response.combinedResponse(Connection.java:126)
+	at clojure.tools.nrepl.Connection$Response.values(Connection.java:140)
+	... 56 more
+Caused by: java.lang.RuntimeException: java.lang.InterruptedException
+	at clojure.lang.Util.runtimeException(Util.java:165)
+	at clojure.lang.LazySeq.sval(LazySeq.java:51)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$take_while$fn__3840.invoke(core.clj:2509)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.tools.nrepl$client$tracking_seq__4780$fn__4781.invoke(nrepl.clj:47)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$filter$fn__3830.invoke(core.clj:2468)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$take_while$fn__3840.invoke(core.clj:2509)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$concat$fn__3528.invoke(core.clj:661)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$apply.invoke(core.clj:600)
+	at clojure.tools.nrepl$combine_responses.invoke(nrepl.clj:130)
+	at clojure.lang.Var.invoke(Var.java:401)
+	at clojure.tools.nrepl.Connection$Response.combinedResponse(Connection.java:121)
+	... 57 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at clojure.tools.nrepl.transport$fn_transport$fn__4700.invoke(transport.clj:42)
+	at clojure.tools.nrepl.transport.FnTransport.recv(transport.clj:29)
+	at clojure.tools.nrepl$response_seq$fn__4770.invoke(nrepl.clj:27)
+	at clojure.core$repeatedly$fn__4304.invoke(core.clj:4518)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	... 89 more
+
+!ENTRY ccw.core 1 0 2012-11-02 15:22:56.419
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.Compiler$CompilerException", :id "1fdd21b0-6dd4-4d08-8b52-46d90e3ef7fd", :root-ex "class clojure.lang.Compiler$CompilerException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:22:56.423
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.Compiler$CompilerException", :id "1fdd21b0-6dd4-4d08-8b52-46d90e3ef7fd", :root-ex "class clojure.lang.Compiler$CompilerException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:26:50.549
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.Compiler$CompilerException", :id "d9de19b8-65b2-4830-8b4a-dc0f6a88932b", :root-ex "class clojure.lang.Compiler$CompilerException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:26:50.551
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.Compiler$CompilerException", :id "d9de19b8-65b2-4830-8b4a-dc0f6a88932b", :root-ex "class clojure.lang.Compiler$CompilerException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:27:07.545
+!MESSAGE Cannot handle REPL response: :ex{:ex "class jpl.PrologException", :id "ef9f9d8b-9509-49cf-be48-c165a5e36cf8", :root-ex "class jpl.PrologException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:27:07.546
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class jpl.PrologException", :id "ef9f9d8b-9509-49cf-be48-c165a5e36cf8", :root-ex "class jpl.PrologException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:37:29.588
+!MESSAGE Cannot handle REPL response: :ex{:ex "class jpl.PrologException", :id "feaf89d1-17ad-4521-a6b7-6db5886631da", :root-ex "class jpl.PrologException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:37:29.590
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class jpl.PrologException", :id "feaf89d1-17ad-4521-a6b7-6db5886631da", :root-ex "class jpl.PrologException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:37:46.545
+!MESSAGE Cannot handle REPL response: :ex{:ex "class jpl.PrologException", :id "0aa2d377-8982-4724-bc72-d469be1b4ee1", :root-ex "class jpl.PrologException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:37:46.547
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class jpl.PrologException", :id "0aa2d377-8982-4724-bc72-d469be1b4ee1", :root-ex "class jpl.PrologException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:38:01.619
+!MESSAGE Cannot handle REPL response: :ex{:ex "class jpl.PrologException", :id "244d31cc-0888-464f-94ab-2be36bbc1cd5", :root-ex "class jpl.PrologException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:38:01.621
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class jpl.PrologException", :id "244d31cc-0888-464f-94ab-2be36bbc1cd5", :root-ex "class jpl.PrologException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:38:45.216
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.LispReader$ReaderException", :id "8c7c3d01-8868-4a5e-9e58-332e59a75225", :root-ex "class java.lang.NumberFormatException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:38:45.218
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.LispReader$ReaderException", :id "8c7c3d01-8868-4a5e-9e58-332e59a75225", :root-ex "class java.lang.NumberFormatException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:38:45.243
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.LispReader$ReaderException", :id "8c7c3d01-8868-4a5e-9e58-332e59a75225", :root-ex "class java.lang.RuntimeException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:38:45.244
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.LispReader$ReaderException", :id "8c7c3d01-8868-4a5e-9e58-332e59a75225", :root-ex "class java.lang.RuntimeException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:38:45.267
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.LispReader$ReaderException", :id "8c7c3d01-8868-4a5e-9e58-332e59a75225", :root-ex "class java.lang.RuntimeException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:38:45.269
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.LispReader$ReaderException", :id "8c7c3d01-8868-4a5e-9e58-332e59a75225", :root-ex "class java.lang.RuntimeException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:40:10.348
+!MESSAGE Cannot handle REPL response: :ex{:ex "class jpl.PrologException", :id "3efc16f3-c274-478f-98db-36bb2d6e2972", :root-ex "class jpl.PrologException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 15:40:10.351
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class jpl.PrologException", :id "3efc16f3-c274-478f-98db-36bb2d6e2972", :root-ex "class jpl.PrologException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 2 0 2012-11-02 17:27:26.991
+!MESSAGE Failed to read file jpl.clj (java.lang.RuntimeException: Unmatched delimiter: })
+
+!ENTRY ccw.core 2 0 2012-11-02 17:27:28.012
+!MESSAGE Failed to read file jpl.clj (java.lang.RuntimeException: Map literal must contain an even number of forms)
+
+!ENTRY ccw.core 1 0 2012-11-02 17:27:37.486
+!MESSAGE Starting REPL with program args: -i "/C:/eclipse/plugins/ccw.core_0.10.1.STABLE001/ccw/debug/serverrepl.clj" -e "(require 'clojure.tools.nrepl.server)(do (clojure.tools.nrepl.server/start-server :ack-port 57749) nil)"  -i "@/rdl/jpl.clj" 
+
+!ENTRY ccw.core 1 0 2012-11-02 17:27:37.511
+!MESSAGE Adding to project's classpath to support nREPL: [C:\eclipse\plugins\org.clojure.tools.nrepl_0.2.0.BETA009.jar]
+
+!ENTRY ccw.core 4 0 2012-11-02 17:27:46.403
+!MESSAGE Could not connect REPL to local launch
+!STACK 0
+java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.InterruptedException
+	at clojure.tools.nrepl.Connection$Response.values(Connection.java:142)
+	at ccw.repl.REPLView.configure(REPLView.java:310)
+	at ccw.repl.REPLView.connect(REPLView.java:354)
+	at ccw.launching.ClojureLaunchDelegate$REPLViewLaunchMonitor$1$1.connectRepl(ClojureLaunchDelegate.java:154)
+	at ccw.launching.ClojureLaunchDelegate$REPLViewLaunchMonitor$1$1.run(ClojureLaunchDelegate.java:142)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:164)
+	at org.eclipse.ui.internal.UILockListener.aboutToWait(UILockListener.java:126)
+	at org.eclipse.core.internal.jobs.LockManager.aboutToWait(LockManager.java:123)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:845)
+	at org.eclipse.core.internal.jobs.InternalJob.join(InternalJob.java:380)
+	at org.eclipse.core.runtime.jobs.Job.join(Job.java:385)
+	at ccw.launching.ClojureLaunchDelegate$REPLViewLaunchMonitor.done(ClojureLaunchDelegate.java:177)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.launch(JavaLaunchDelegate.java:109)
+	at ccw.launching.ClojureLaunchDelegate.launch(ClojureLaunchDelegate.java:192)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:697)
+	at ccw.launching.ClojureLaunchShortcut.launchProject(ClojureLaunchShortcut.java:127)
+	at ccw.launching.ClojureLaunchShortcut.launchEditorPart(ClojureLaunchShortcut.java:67)
+	at ccw.launching.ClojureLaunchShortcut.launch(ClojureLaunchShortcut.java:60)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:424)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launchShortcut(ContextRunner.java:205)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:138)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:82)
+	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.run(AbstractLaunchToolbarAction.java:80)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:409)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:241)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:229)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$6.handleEvent(ActionContributionItem.java:452)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4169)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3758)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1029)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:923)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.InterruptedException
+	at clojure.tools.nrepl.Connection$Response.combinedResponse(Connection.java:126)
+	at clojure.tools.nrepl.Connection$Response.values(Connection.java:140)
+	... 56 more
+Caused by: java.lang.RuntimeException: java.lang.InterruptedException
+	at clojure.lang.Util.runtimeException(Util.java:165)
+	at clojure.lang.LazySeq.sval(LazySeq.java:51)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$take_while$fn__3840.invoke(core.clj:2509)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.tools.nrepl$client$tracking_seq__4780$fn__4781.invoke(nrepl.clj:47)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$filter$fn__3830.invoke(core.clj:2468)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$take_while$fn__3840.invoke(core.clj:2509)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$concat$fn__3528.invoke(core.clj:661)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$apply.invoke(core.clj:600)
+	at clojure.tools.nrepl$combine_responses.invoke(nrepl.clj:130)
+	at clojure.lang.Var.invoke(Var.java:401)
+	at clojure.tools.nrepl.Connection$Response.combinedResponse(Connection.java:121)
+	... 57 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at clojure.tools.nrepl.transport$fn_transport$fn__4700.invoke(transport.clj:42)
+	at clojure.tools.nrepl.transport.FnTransport.recv(transport.clj:29)
+	at clojure.tools.nrepl$response_seq$fn__4770.invoke(nrepl.clj:27)
+	at clojure.core$repeatedly$fn__4304.invoke(core.clj:4518)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	... 89 more
+
+!ENTRY ccw.core 1 0 2012-11-02 17:29:14.755
+!MESSAGE Cannot handle REPL response: :ex{:ex "class jpl.PrologException", :id "2546758b-ba49-43f2-b89e-c765c452b7e9", :root-ex "class jpl.PrologException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-02 17:29:14.756
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class jpl.PrologException", :id "2546758b-ba49-43f2-b89e-c765c452b7e9", :root-ex "class jpl.PrologException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 2 0 2012-11-03 00:53:47.711
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 24)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:53:51.415
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:53:52.636
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:53:53.523
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 24)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:59:14.084
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 24)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:59:17.777
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 24)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:59:19.885
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:59:20.733
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:59:25.996
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:59:27.320
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:59:29.074
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:59:29.982
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:59:35.620
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:59:39.361
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:59:44.054
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:59:49.054
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:59:51.050
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:59:51.701
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:59:52.313
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:59:54.547
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 00:59:55.667
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:00:03.527
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:00:04.353
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 35)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:00:05.965
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 35)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:00:07.995
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:00:13.750
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 31)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:00:15.926
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 35)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:00:21.587
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 35)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:00:24.799
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 35)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:00:25.677
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 35)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:00:29.736
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 35)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:00:31.281
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 35)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:00:33.159
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 35)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:00:34.516
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 35)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:00:36.309
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 35)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:00:38.017
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 35)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:01:04.429
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 35)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:01:06.863
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 35)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:01:09.145
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 35)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:02:46.273
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 36)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:02:48.822
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 37)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:03:12.124
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 37)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:03:12.717
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 37)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:03:16.193
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:03:17.375
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:03:18.062
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:03:19.520
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:03:20.305
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:03:21.976
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 1 0 2012-11-03 01:03:49.423
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.Compiler$CompilerException", :id "d9f07260-9b83-46dd-baac-54c372a5adaf", :root-ex "class clojure.lang.Compiler$CompilerException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-03 01:03:49.425
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.Compiler$CompilerException", :id "d9f07260-9b83-46dd-baac-54c372a5adaf", :root-ex "class clojure.lang.Compiler$CompilerException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 2 0 2012-11-03 01:04:10.025
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:04:10.671
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:04:18.193
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:04:19.806
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:04:23.308
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:04:29.169
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:04:30.128
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:06:04.845
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:06:05.445
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:06:09.335
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:06:11.309
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:06:13.232
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:06:13.849
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:06:15.262
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:06:16.812
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:06:17.362
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:06:56.210
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:00.768
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:02.605
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:03.215
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:05.101
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:06.513
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:10.168
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:12.210
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:15.864
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:25.733
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:30.126
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:33.821
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:35.288
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:38.888
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:39.417
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:40.296
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 39)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:40.846
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 39)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:42.102
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 39)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:46.480
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:47.390
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:48.811
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 39)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:49.360
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 39)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:07:53.341
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 40)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:08:06.524
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 41)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:08:22.690
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 41)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:08:24.073
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:08:25.933
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:08:31.379
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:08:36.716
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:08:37.219
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:08:38.731
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:08:42.152
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:08:43.389
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:08:44.435
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:08:45.536
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:08:48.029
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:08:50.075
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:08:55.140
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:08:56.453
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:08:57.412
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:08:58.773
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:08:59.972
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:03.580
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:10.816
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:11.633
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:12.669
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:15.956
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:22.585
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:25.114
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:26.248
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:27.517
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:28.425
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 45)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:28.983
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 45)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:30.409
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:34.708
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:35.391
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:41.675
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:43.756
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:45.620
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:47.420
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:48.459
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:56.560
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:57.600
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:09:59.766
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:10:02.244
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:10:04.230
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:10:05.566
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:10:06.959
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:10:14.653
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:10:16.178
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:10:20.860
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 48)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:10:34.416
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 48)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:04.155
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:04.931
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:05.676
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:06.811
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:08.925
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:10.924
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:11.540
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:15.151
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ))
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:15.800
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ))
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:17.739
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:19.037
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:24.333
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 48)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:27.861
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 49)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:38.753
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 49)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:41.023
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 49)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:46.281
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 49)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:47.926
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 49)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:49.640
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 49)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:50.250
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 49)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:51.596
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 49)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:54.607
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 49)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:11:55.564
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 50)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:12:08.890
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 50)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:12:10.457
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:12:16.580
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:12:21.847
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:12:22.950
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:12:26.609
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:12:27.606
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:12:30.857
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:12:34.311
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:12:35.352
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:12:37.088
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 52)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:12:40.112
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 52)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:12:40.843
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 52)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:12:41.815
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Invalid token: def:)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:12:42.479
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 52)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:12:43.532
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 52)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:13:09.419
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:13:12.482
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:13:13.384
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:13:14.066
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:13:15.474
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:13:17.677
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:13:18.492
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:13:20.580
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:13:21.368
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:14.490
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:16.258
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:16.761
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:17.553
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:20.133
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:21.538
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:25.800
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:26.635
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:28.141
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:32.844
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 52)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:35.039
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 52)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:37.784
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Invalid token: def:)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:38.759
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 52)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:42.124
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 52)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:43.801
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 52)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:46.843
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 52)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:53.827
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 52)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:55.428
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:57.001
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:15:58.179
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:16:08.753
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 53)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:16:12.887
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 54)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:16:13.978
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 54)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:16:15.336
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 55)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:16:15.926
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 55)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:16:17.666
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 55)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:16:22.920
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 55)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:16:23.849
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 55)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:16:25.701
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 56)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:16:26.865
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 56)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:16:28.161
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 56)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:16:29.872
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 56)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:16:32.613
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 56)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:17:10.189
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 56)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:17:24.282
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 56)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:17:26.888
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 56)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:17:29.221
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 56)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:17:31.728
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 56)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:17:36.263
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 56)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:17:37.022
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 56)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:17:49.371
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 55)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:17:50.223
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 55)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:17:52.955
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:18:09.042
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 53)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:18:13.247
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 53)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:18:17.559
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 53)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:18:19.014
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 53)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:18:19.983
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 53)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:18:24.989
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 54)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:18:25.950
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 54)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:18:28.972
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 54)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:18:32.964
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 54)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:18:34.232
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 54)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:19:36.624
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 54)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:19:40.741
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 54)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:19:42.423
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 54)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:19:46.947
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:19:53.761
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:19:54.423
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:19:55.403
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:20:22.554
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 55)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:20:23.419
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 55)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:20:37.245
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 55)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:20:38.468
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 55)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:21:28.660
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 56)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:21:29.363
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 56)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:21:29.999
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 56)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:21:32.706
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 56)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:21:34.631
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 57)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:21:37.935
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 57)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:21:39.042
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 57)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:22:07.243
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 57)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:22:12.884
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 57)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:22:13.627
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 57)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:22:18.711
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 57)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:22:20.250
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 57)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:22:21.087
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 57)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:22:22.150
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 57)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:22:23.065
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 57)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:22:23.754
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 57)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:22:24.677
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 55)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:22:27.182
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:22:33.084
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 56)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:22:34.287
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 56)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:22:35.432
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 55)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:22:36.257
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:22:41.093
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:22:42.157
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 51)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:22:45.262
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 33)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:22:46.663
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 33)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:23:01.215
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 33)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:23:02.807
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 33)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:23:15.076
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 33)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:23:18.245
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 61)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:23:19.363
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 33)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:24:05.720
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 33)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:24:43.102
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 33)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:24:48.037
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 33)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:24:58.419
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 33)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:25:19.605
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 33)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:25:22.083
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 33)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:25:22.988
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 33)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:25:25.117
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 63)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:25:25.749
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 63)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:25:26.967
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 63)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:25:30.417
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 63)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:25:31.405
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 63)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:25:34.078
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 63)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:25:36.365
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 63)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:25:36.914
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 63)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:25:37.624
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 63)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:25:44.198
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 63)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:25:46.940
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 63)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:25:48.228
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 63)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:26:05.020
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 63)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:26:06.350
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 63)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:26:07.257
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 63)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:26:13.644
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 63)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:26:17.837
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 63)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:26:18.789
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 63)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:26:19.410
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 63)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:26:20.040
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 33)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:26:54.642
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 4)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:26:55.908
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 4)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:27:01.149
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 4)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:27:09.486
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 4)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:27:10.711
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 5)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:27:12.689
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 5)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:27:14.477
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 5)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:27:16.992
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 5)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:27:17.839
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 5)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:27:20.402
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 5)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:27:22.229
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 5)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:27:49.220
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:27:58.433
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: Invalid token: :)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:27:59.531
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 5)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:28:02.382
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 6)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:28:03.999
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:28:07.529
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:28:09.410
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 6)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:28:11.442
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:28:12.929
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:28:14.253
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:28:32.316
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 6)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:28:35.790
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 8)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:28:40.539
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 8)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:28:41.567
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 8)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:28:44.220
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 8)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:28:50.143
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 10)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:28:52.559
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:28:54.606
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 10)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:28:55.372
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 10)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:00.179
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 10)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:02.193
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 11)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:04.489
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 11)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:05.402
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: Invalid token: :)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:06.207
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 11)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:08.161
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: Invalid token: :)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:09.184
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 11)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:12.261
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: Invalid token: :)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:13.935
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 11)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:20.446
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 11)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:21.112
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 11)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:21.994
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 11)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:23.211
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 8)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:25.733
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 8)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:27.329
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:28.489
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:29.364
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:31.698
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:33.697
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:29:34.638
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:00.747
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:01.727
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:03.631
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:06.091
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:08.013
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:22.539
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:23.317
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:24.503
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:25.322
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:26.266
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:27.572
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:28.173
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:28.820
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:29.488
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:30.750
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 8)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:31.581
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 8)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:32.739
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 8)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:36.354
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:38.790
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:39.793
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: Invalid token: :)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:43.213
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:30:45.179
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: Invalid token: :)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:31:33.109
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:31:33.842
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:31:35.408
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:31:37.760
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: Invalid token: :)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:31:38.628
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:31:39.693
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:31:41.846
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:31:42.632
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:31:43.339
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:31:43.996
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:31:44.754
+!MESSAGE Failed to read file TestRules.clj (java.lang.RuntimeException: EOF while reading, starting at line 8)
+
+!ENTRY ccw.core 1 0 2012-11-03 01:31:53.318
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.Compiler$CompilerException", :id "b33c1e41-b1f5-4cb5-b2ea-775ea1a18945", :root-ex "class clojure.lang.Compiler$CompilerException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-03 01:31:53.319
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.Compiler$CompilerException", :id "b33c1e41-b1f5-4cb5-b2ea-775ea1a18945", :root-ex "class clojure.lang.Compiler$CompilerException", :session "d76d523d-5b9d-4acc-9a35-c2faafc736aa", :status ["eval-error"]}
+
+!ENTRY ccw.core 4 0 2012-11-03 01:34:26.178
+!MESSAGE When trying to create clojure.main file arg to launch, was unable to  find package fragment root for file L/Rules/TestRules.clj in project P/Rules
+
+!ENTRY ccw.core 1 0 2012-11-03 01:34:26.180
+!MESSAGE Starting REPL with program args: -i "/C:/eclipse/plugins/ccw.core_0.10.1.STABLE001/ccw/debug/serverrepl.clj" -e "(require 'clojure.tools.nrepl.server)(do (clojure.tools.nrepl.server/start-server :ack-port 57749) nil)"  
+
+!ENTRY ccw.core 1 0 2012-11-03 01:34:26.202
+!MESSAGE Adding to project's classpath to support nREPL: [C:\eclipse\plugins\org.clojure.tools.nrepl_0.2.0.BETA009.jar]
+
+!ENTRY ccw.core 4 0 2012-11-03 01:34:38.658
+!MESSAGE Could not connect REPL to local launch
+!STACK 0
+java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.InterruptedException
+	at clojure.tools.nrepl.Connection$Response.values(Connection.java:142)
+	at ccw.repl.REPLView.configure(REPLView.java:310)
+	at ccw.repl.REPLView.connect(REPLView.java:354)
+	at ccw.launching.ClojureLaunchDelegate$REPLViewLaunchMonitor$1$1.connectRepl(ClojureLaunchDelegate.java:154)
+	at ccw.launching.ClojureLaunchDelegate$REPLViewLaunchMonitor$1$1.run(ClojureLaunchDelegate.java:142)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:164)
+	at org.eclipse.ui.internal.UILockListener.aboutToWait(UILockListener.java:126)
+	at org.eclipse.core.internal.jobs.LockManager.aboutToWait(LockManager.java:123)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:845)
+	at org.eclipse.core.internal.jobs.InternalJob.join(InternalJob.java:380)
+	at org.eclipse.core.runtime.jobs.Job.join(Job.java:385)
+	at ccw.launching.ClojureLaunchDelegate$REPLViewLaunchMonitor.done(ClojureLaunchDelegate.java:177)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.launch(JavaLaunchDelegate.java:109)
+	at ccw.launching.ClojureLaunchDelegate.launch(ClojureLaunchDelegate.java:192)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:697)
+	at ccw.launching.ClojureLaunchShortcut.launchProject(ClojureLaunchShortcut.java:127)
+	at ccw.launching.ClojureLaunchShortcut.launchEditorPart(ClojureLaunchShortcut.java:67)
+	at ccw.launching.ClojureLaunchShortcut.launch(ClojureLaunchShortcut.java:60)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:424)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launchShortcut(ContextRunner.java:205)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:138)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:82)
+	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.run(AbstractLaunchToolbarAction.java:80)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:409)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:241)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:229)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$6.handleEvent(ActionContributionItem.java:452)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4169)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3758)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1029)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:923)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.InterruptedException
+	at clojure.tools.nrepl.Connection$Response.combinedResponse(Connection.java:126)
+	at clojure.tools.nrepl.Connection$Response.values(Connection.java:140)
+	... 56 more
+Caused by: java.lang.RuntimeException: java.lang.InterruptedException
+	at clojure.lang.Util.runtimeException(Util.java:165)
+	at clojure.lang.LazySeq.sval(LazySeq.java:51)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$take_while$fn__3840.invoke(core.clj:2509)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.tools.nrepl$client$tracking_seq__4780$fn__4781.invoke(nrepl.clj:47)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$filter$fn__3830.invoke(core.clj:2468)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$take_while$fn__3840.invoke(core.clj:2509)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$concat$fn__3528.invoke(core.clj:661)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$apply.invoke(core.clj:600)
+	at clojure.tools.nrepl$combine_responses.invoke(nrepl.clj:130)
+	at clojure.lang.Var.invoke(Var.java:401)
+	at clojure.tools.nrepl.Connection$Response.combinedResponse(Connection.java:121)
+	... 57 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at clojure.tools.nrepl.transport$fn_transport$fn__4700.invoke(transport.clj:42)
+	at clojure.tools.nrepl.transport.FnTransport.recv(transport.clj:29)
+	at clojure.tools.nrepl$response_seq$fn__4770.invoke(nrepl.clj:27)
+	at clojure.core$repeatedly$fn__4304.invoke(core.clj:4518)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	... 89 more
+
+!ENTRY ccw.core 1 0 2012-11-03 01:36:23.278
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.ArityException", :id "eca98cbd-70b3-41ba-85be-e69e7b8aa03f", :root-ex "class clojure.lang.ArityException", :session "524a46f0-f781-41a2-8010-b8793b49cb39", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-03 01:36:23.280
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.ArityException", :id "eca98cbd-70b3-41ba-85be-e69e7b8aa03f", :root-ex "class clojure.lang.ArityException", :session "524a46f0-f781-41a2-8010-b8793b49cb39", :status ["eval-error"]}
+
+!ENTRY ccw.core 2 0 2012-11-03 01:42:38.989
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 24)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:42:42.891
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: Invalid token: this:)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:42:43.635
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 24)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:42:46.806
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 24)
+
+!ENTRY ccw.core 1 0 2012-11-03 01:43:07.026
+!MESSAGE Starting REPL with program args: -i "/C:/eclipse/plugins/ccw.core_0.10.1.STABLE001/ccw/debug/serverrepl.clj" -e "(require 'clojure.tools.nrepl.server)(do (clojure.tools.nrepl.server/start-server :ack-port 57749) nil)"  -i "@/rdl/rule.clj" 
+
+!ENTRY ccw.core 1 0 2012-11-03 01:43:07.053
+!MESSAGE Adding to project's classpath to support nREPL: [C:\eclipse\plugins\org.clojure.tools.nrepl_0.2.0.BETA009.jar]
+
+!ENTRY ccw.core 4 0 2012-11-03 01:43:21.055
+!MESSAGE Could not connect REPL to local launch
+!STACK 0
+java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.InterruptedException
+	at clojure.tools.nrepl.Connection$Response.values(Connection.java:142)
+	at ccw.repl.REPLView.configure(REPLView.java:310)
+	at ccw.repl.REPLView.connect(REPLView.java:354)
+	at ccw.launching.ClojureLaunchDelegate$REPLViewLaunchMonitor$1$1.connectRepl(ClojureLaunchDelegate.java:154)
+	at ccw.launching.ClojureLaunchDelegate$REPLViewLaunchMonitor$1$1.run(ClojureLaunchDelegate.java:142)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:164)
+	at org.eclipse.ui.internal.UILockListener.aboutToWait(UILockListener.java:126)
+	at org.eclipse.core.internal.jobs.LockManager.aboutToWait(LockManager.java:123)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:845)
+	at org.eclipse.core.internal.jobs.InternalJob.join(InternalJob.java:380)
+	at org.eclipse.core.runtime.jobs.Job.join(Job.java:385)
+	at ccw.launching.ClojureLaunchDelegate$REPLViewLaunchMonitor.done(ClojureLaunchDelegate.java:177)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.launch(JavaLaunchDelegate.java:109)
+	at ccw.launching.ClojureLaunchDelegate.launch(ClojureLaunchDelegate.java:192)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:697)
+	at ccw.launching.ClojureLaunchShortcut.launchProject(ClojureLaunchShortcut.java:127)
+	at ccw.launching.ClojureLaunchShortcut.launchEditorPart(ClojureLaunchShortcut.java:67)
+	at ccw.launching.ClojureLaunchShortcut.launch(ClojureLaunchShortcut.java:60)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:424)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launchShortcut(ContextRunner.java:205)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:138)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:82)
+	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.run(AbstractLaunchToolbarAction.java:80)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:409)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:241)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:229)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$6.handleEvent(ActionContributionItem.java:452)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4169)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3758)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1029)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:923)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.InterruptedException
+	at clojure.tools.nrepl.Connection$Response.combinedResponse(Connection.java:126)
+	at clojure.tools.nrepl.Connection$Response.values(Connection.java:140)
+	... 56 more
+Caused by: java.lang.RuntimeException: java.lang.InterruptedException
+	at clojure.lang.Util.runtimeException(Util.java:165)
+	at clojure.lang.LazySeq.sval(LazySeq.java:51)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$take_while$fn__3840.invoke(core.clj:2509)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.tools.nrepl$client$tracking_seq__4780$fn__4781.invoke(nrepl.clj:47)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$filter$fn__3830.invoke(core.clj:2468)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$take_while$fn__3840.invoke(core.clj:2509)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$concat$fn__3528.invoke(core.clj:661)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	at clojure.lang.LazySeq.seq(LazySeq.java:60)
+	at clojure.lang.RT.seq(RT.java:466)
+	at clojure.core$seq.invoke(core.clj:133)
+	at clojure.core$apply.invoke(core.clj:600)
+	at clojure.tools.nrepl$combine_responses.invoke(nrepl.clj:130)
+	at clojure.lang.Var.invoke(Var.java:401)
+	at clojure.tools.nrepl.Connection$Response.combinedResponse(Connection.java:121)
+	... 57 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at clojure.tools.nrepl.transport$fn_transport$fn__4700.invoke(transport.clj:42)
+	at clojure.tools.nrepl.transport.FnTransport.recv(transport.clj:29)
+	at clojure.tools.nrepl$response_seq$fn__4770.invoke(nrepl.clj:27)
+	at clojure.core$repeatedly$fn__4304.invoke(core.clj:4518)
+	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+	... 89 more
+
+!ENTRY ccw.core 4 0 2012-11-03 01:43:28.677
+!MESSAGE Could not load file C:\Users\JvJ\Documents\GitHub\S-A-A\Rules\TestRules.clj
+!STACK 0
+java.lang.NullPointerException
+	at ccw.repl.REPLView.getAvailableOperations(REPLView.java:376)
+	at ccw.editors.clojure.LoadFileAction.evaluateFileText(LoadFileAction.java:115)
+	at ccw.editors.clojure.LoadFileAction.run(LoadFileAction.java:91)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:119)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:76)
+	at sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:229)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:210)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:131)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:171)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:814)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:707)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$7(HandledContributionItem.java:691)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:630)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4169)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3758)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1029)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:923)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY ccw.core 1 0 2012-11-03 01:45:53.564
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.ArityException", :id "23c24026-5917-4693-82f8-8d5751a7a1a9", :root-ex "class clojure.lang.ArityException", :session "0e0d63b3-2691-4870-9c19-a9a1180860ff", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-03 01:45:53.565
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.ArityException", :id "23c24026-5917-4693-82f8-8d5751a7a1a9", :root-ex "class clojure.lang.ArityException", :session "0e0d63b3-2691-4870-9c19-a9a1180860ff", :status ["eval-error"]}
+
+!ENTRY ccw.core 2 0 2012-11-03 01:48:06.916
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 24)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:48:18.723
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 24)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:48:22.210
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 24)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:49:12.747
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 24)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:49:15.037
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 33)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:49:17.146
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 33)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:49:18.774
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 52)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:49:20.134
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 52)
+
+!ENTRY ccw.core 2 0 2012-11-03 01:49:21.254
+!MESSAGE Failed to read file rule.clj (java.lang.RuntimeException: EOF while reading, starting at line 52)
+
+!ENTRY ccw.core 1 0 2012-11-03 12:25:12.928
+!MESSAGE Cannot handle REPL response: :ex{:ex "class java.lang.ClassCastException", :id "c33f0451-2970-46b3-858f-64ced86098cd", :root-ex "class java.lang.ClassCastException", :session "0e0d63b3-2691-4870-9c19-a9a1180860ff", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-03 12:25:12.980
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class java.lang.ClassCastException", :id "c33f0451-2970-46b3-858f-64ced86098cd", :root-ex "class java.lang.ClassCastException", :session "0e0d63b3-2691-4870-9c19-a9a1180860ff", :status ["eval-error"]}
+
+!ENTRY ccw.core 2 0 2012-11-03 12:25:51.433
+!MESSAGE Failed to read file RdlInterface.clj (java.lang.RuntimeException: EOF while reading, starting at line 49)
+
+!ENTRY ccw.core 1 0 2012-11-03 12:26:26.795
+!MESSAGE Cannot handle REPL response: :ex{:ex "class java.lang.ClassCastException", :id "1885c692-7c38-4553-b3bf-d4c0868d0578", :root-ex "class java.lang.ClassCastException", :session "0e0d63b3-2691-4870-9c19-a9a1180860ff", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-03 12:26:26.796
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class java.lang.ClassCastException", :id "1885c692-7c38-4553-b3bf-d4c0868d0578", :root-ex "class java.lang.ClassCastException", :session "0e0d63b3-2691-4870-9c19-a9a1180860ff", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-03 12:26:48.042
+!MESSAGE Cannot handle REPL response: :ex{:ex "class java.lang.RuntimeException", :id "955958e8-7fd3-4616-bcf0-f818bfec0a67", :root-ex "class java.io.FileNotFoundException", :session "0e0d63b3-2691-4870-9c19-a9a1180860ff", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-03 12:26:48.043
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class java.lang.RuntimeException", :id "955958e8-7fd3-4616-bcf0-f818bfec0a67", :root-ex "class java.io.FileNotFoundException", :session "0e0d63b3-2691-4870-9c19-a9a1180860ff", :status ["eval-error"]}
+
+!ENTRY ccw.core 2 0 2012-11-03 12:28:38.331
+!MESSAGE Failed to read file RdlInterface.clj (java.lang.RuntimeException: Unmatched delimiter: ))
+
+!ENTRY ccw.core 2 0 2012-11-03 12:29:44.243
+!MESSAGE Failed to read file RdlInterface.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 12:34:07.542
+!MESSAGE Failed to read file RdlInterface.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 12:34:11.979
+!MESSAGE Failed to read file RdlInterface.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 2 0 2012-11-03 12:34:13.084
+!MESSAGE Failed to read file RdlInterface.clj (java.lang.RuntimeException: Unmatched delimiter: ])
+
+!ENTRY ccw.core 1 0 2012-11-03 12:36:13.643
+!MESSAGE Cannot handle REPL response: :ex{:ex "class clojure.lang.Compiler$CompilerException", :id "0b41935e-196e-4e1a-856d-526d613f04df", :root-ex "class clojure.lang.Compiler$CompilerException", :session "0e0d63b3-2691-4870-9c19-a9a1180860ff", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-03 12:36:13.644
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class clojure.lang.Compiler$CompilerException", :id "0b41935e-196e-4e1a-856d-526d613f04df", :root-ex "class clojure.lang.Compiler$CompilerException", :session "0e0d63b3-2691-4870-9c19-a9a1180860ff", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-03 12:36:19.637
+!MESSAGE Cannot handle REPL response: :ex{:ex "class java.lang.RuntimeException", :id "aee3bb6e-a1dd-4da4-922d-522e5941899c", :root-ex "class java.lang.InstantiationError", :session "0e0d63b3-2691-4870-9c19-a9a1180860ff", :status ["eval-error"]}
+
+!ENTRY ccw.core 1 0 2012-11-03 12:36:19.639
+!MESSAGE Cannot handle REPL response: :root-ex{:ex "class java.lang.RuntimeException", :id "aee3bb6e-a1dd-4da4-922d-522e5941899c", :root-ex "class java.lang.InstantiationError", :session "0e0d63b3-2691-4870-9c19-a9a1180860ff", :status ["eval-error"]}
+!SESSION 2012-11-04 12:01:15.129 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_07
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ccw.core 2 0 2012-11-04 18:07:01.098
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 3)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:07:02.502
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 5)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:07:06.506
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 5)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:07:12.219
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 5)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:07:16.082
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 5)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:07:18.709
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 5)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:07:22.996
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 7)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:07:25.077
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 7)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:07:25.810
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 7)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:07:27.093
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 7)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:07:30.943
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 9)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:08:12.467
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 9)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:08:13.039
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 9)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:08:43.205
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 11)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:07.131
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:15.165
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:16.420
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:17.454
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:20.376
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:21.135
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 13)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:26.019
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:29.286
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:29.980
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:33.894
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:34.659
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:36.662
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:39.616
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:40.273
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:40.949
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 17)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:44.996
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 15)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:45.826
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 18)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:46.551
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 18)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:49.043
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 18)
+
+!ENTRY ccw.core 2 0 2012-11-04 18:09:53.047
+!MESSAGE Failed to read file core.clj (java.lang.RuntimeException: EOF while reading, starting at line 19)

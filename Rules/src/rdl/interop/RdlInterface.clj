@@ -17,7 +17,7 @@
               
               [pList ["[Ljava.lang.Object;"] Object]
               
-              [trans [String String String "[Ljava.lang.Object;"] Object]
+              [trans [String String Object "[Ljava.lang.Object;"] Object]
               
               [query ["[Ljava.lang.Object;"] "[Lclojure.lang.IPersistentMap;"]
               
@@ -54,7 +54,7 @@
   ([this st args]
     (apply defrule
            (symbol st)
-           (map #(if (string? %) (read-string %) %) args))
+           (map #(if (string? %) (eval (read-string %)) %) args))
     (rdl.interop.RDLRule. st)))
 
 (defn -pList
@@ -66,7 +66,10 @@
   [this kw1 kw2 func args]
   (vec
     (concat 
-      [[(read-string kw1) (read-string kw2)] (read-string func) ]
+      [[(read-string kw1) (read-string kw2)] 
+       (if (string? func)
+         (eval (read-string func))
+         func)]
       args)))
   
 (defn -query

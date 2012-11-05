@@ -22,13 +22,49 @@ then those rules should be fired."
   (reset! *modified-relations* #{}))
 
 (defn make-filter
-  "Creates a filter from a given vector.
+  "Creates a filter from a given vector or function or map!
 For instance, [[:X :Y] + 2] means that the value reprsented by :X
 in a hash map should be incremented by 2 and re-associated in the
-map as :Y."
-  [[[kw1 kw2] f & args]]
-  (fn [hm]
-    (assoc hm kw2 (apply f (hm kw1) args))))
+map as :Y.
+Also, maps of keywords to functions bind the key as a variable to
+the output of the associated function.
+An argument that is a function returns itself."
+  [arg]
+  (cond
+    
+    (vector? arg) (let [[[kw1 kw2] f & args] arg
+                        _ (when (some nil? [kw1 kw2 f])
+                            (throw
+                              (Exception.
+                                (str "Cannot destructure transformer vector: " arg))))
+                        _ (when (not-every? keyword? [kw1 kw2])
+                            (throw
+                              (Exception.
+                                (str "Transformer vector args must be keywords: " [kw1 kw2]))))
+                        _ (when-not (ifn? f)
+                            (throw
+                              (Exception.
+                                (str "The following value is not a function: " f))))
+                        ]
+                    (fn [hm]
+                      (assoc hm kw2 (apply f (hm kw1) args))))
+    
+    (map? arg) (let [_ (when-not (every? keyword? (keys arg))
+                         (throw (Exception. "Every key in transformer map must be a keyword.")))
+                     _ (when-not (every? ifn? (vals arg))
+                         (throw (Exception. "Every value in transformer map must be a function.")))]
+                 (fn [hm]
+                   (println "Got arg: " hm)
+                   (reduce
+                     (fn [acc [k v]]
+                       (assoc acc k (v acc)))
+                     hm
+                     hm))); LEFTOFF: Test this!
+    
+    (ifn? arg) arg
+    
+    :else (throw (Exception. (str "The hell is this: " arg)))))
+                         
 
 (defn defrule
   "Create a set of rules from a set of clojure terms."
@@ -102,6 +138,7 @@ map as :Y."
       (for [sym (@*rule-tags* rel)]
         ((@*rules* sym))))
     (apply concat)
+    (#(do (println %) %))
     (reset! *update-fns*))
   
   (reset! *modified-relations* #{}))

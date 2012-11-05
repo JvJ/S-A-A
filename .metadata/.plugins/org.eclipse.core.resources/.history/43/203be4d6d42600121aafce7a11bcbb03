@@ -1,0 +1,12 @@
+(ns misc.core)
+
+;;;; These are some miscellaneous utility functions!
+
+(declare flip)
+
+(def $ partial)
+
+(def $> apply)
+
+(def $+ comp)
+
