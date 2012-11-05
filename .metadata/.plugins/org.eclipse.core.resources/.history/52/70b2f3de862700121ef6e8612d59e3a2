@@ -91,7 +91,6 @@ public class RDLTesting {
 		for (IPersistentMap m : results){
 			System.out.println(m);
 		}
-		System.out.println("After loop");
 		
 		// Now, we execute the 2-pass update cycle
 		rdl.updateHead();

@@ -14,7 +14,7 @@ public class RDLTesting {
 		
 		// First, generate an RDL instance
 		RDL rdl = new RDL();
-		rdl.loadFile("testrules.clj");
+		
 		System.out.println("Keyword test: "+ rdl.trans(":X", ":Y", "+", 0.1));
 		
 		// Define a relation with appropriate fields
@@ -91,7 +91,6 @@ public class RDLTesting {
 		for (IPersistentMap m : results){
 			System.out.println(m);
 		}
-		System.out.println("After loop");
 		
 		// Now, we execute the 2-pass update cycle
 		rdl.updateHead();
@@ -186,14 +185,11 @@ public class RDLTesting {
 				);
 			
 		System.out.println("johnny's anger value after: ");
-		
 		for (IPersistentMap m : results){
-			double my= (double)m.valAt(rdl.var("V"));
-			System.out.println("Here is the map: "+m);
+			
+			System.out.println("Here is the map: "+);
 			
 			System.out.println("Object at :V : "+ m.valAt(rdl.var("V")));
-			
-			System.out.println("Object at :H : "+ m.valAt(rdl.var("H")));
 		}
 		
 	}

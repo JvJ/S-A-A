@@ -91,7 +91,6 @@ public class RDLTesting {
 		for (IPersistentMap m : results){
 			System.out.println(m);
 		}
-		System.out.println("After loop");
 		
 		// Now, we execute the 2-pass update cycle
 		rdl.updateHead();
@@ -188,7 +187,7 @@ public class RDLTesting {
 		System.out.println("johnny's anger value after: ");
 		
 		for (IPersistentMap m : results){
-			double my= (double)m.valAt(rdl.var("V"));
+			float my= (float)m.valAt(rdl.var("V"));
 			System.out.println("Here is the map: "+m);
 			
 			System.out.println("Object at :V : "+ m.valAt(rdl.var("V")));
